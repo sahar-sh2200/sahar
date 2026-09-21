@@ -5,7 +5,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+       * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #062e49;
+}
+
+.potential-section {
+  min-height: 100vh;
+  padding: 85px 0 75px;
+  background: #062e49;
+}
+
+.section-title {
+  color: #fff;
+  text-align: center;
+  font-size: 43px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.title-line {
+  width: 65px;
+  height: 4px;
+  border-radius: 10px;
+  background: #fff;
+  margin: 0 auto 24px;
+}
+
+.section-description {
+  max-width: 760px;
+  margin: 0 auto 72px;
+  color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.potential-card {
+  background: #fff;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.potential-card:hover {
+  transform: translateY(-8px);
+}
+
+.potential-card img {
+  display: block;
+  width: 100%;
+  height: 285px;
+  object-fit: cover;
+}
+
+.card-content {
+  text-align: center;
+  padding: 35px 20px 38px;
+}
+
+.card-content h3 {
+  color: #242424;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 700;
+  min-height: 58px;
+  margin-bottom: 20px;
+}
+
+.number {
+  color: #075ce5;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.unit {
+  color: #444;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 767px) {
+
+  .potential-section {
+    padding: 50px 15px;
+  }
+
+  .section-title {
+    font-size: 31px;
+  }
+
+  .section-description {
+    margin-bottom: 40px;
+  }
+
+  .potential-card img {
+    height: 240px;
+  }
+
+  .card-content h3 {
+    font-size: 18px;
+  }
+
+  .number {
+    font-size: 58px;
+  }
+
+}
+</style>
 <body>
+    <section class="potential-section">
+  <div class="container">
+
+    <h1 class="section-title">
+      International Customer<br>Potential
+    </h1>
+
+    <div class="title-line"></div>
+
+    <p class="section-description">
+      It is a long established fact that a reader will be distracted by
+      the readable content of a page when looking at its layout.
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="potential-card">
+
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
+               alt="Domestic Production">
+
+          <div class="card-content">
+            <h3>Domestic Production<br>Potential</h3>
+
+            <div class="number">650</div>
+
+            <div class="unit">BILLION TONS</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="potential-card">
+
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
+               alt="Overseas Production">
+
+          <div class="card-content">
+            <h3>Overseas Production<br>Potential</h3>
+
+            <div class="number">780</div>
+
+            <div class="unit">BILLION TONS</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="potential-card">
+
+          <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80"
+               alt="International Production">
+
+          <div class="card-content">
+            <h3>International Production<br>Capacity</h3>
+
+            <div class="number">950</div>
+
+            <div class="unit">BILLION TONS</div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
     
 </body>
 </html>
